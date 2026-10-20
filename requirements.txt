@@ -1,0 +1,8 @@
+# 核心依赖（适配你的代码+Python 3.8~3.11）
+streamlit>=1.30.0,<2.0.0
+pymysql>=1.1.0,<2.0.0
+pandas>=2.0.0,<3.0.0
+plotly>=5.17.0,<7.0.0
+Faker>=38.0.0,<39.0.0
+
+# 备注：datetime、random、hashlib、timedelta是Python内置库，无需安装
