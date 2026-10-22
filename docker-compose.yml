@@ -1,0 +1,26 @@
+name: commerceops
+
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: commerceops-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: local-root-only
+      MYSQL_DATABASE: ecommerce_db
+      MYSQL_USER: commerceops
+      MYSQL_PASSWORD: commerceops-dev
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - commerceops_mysql:/var/lib/mysql
+      - ./db_backup.sql:/docker-entrypoint-initdb.d/01-db_backup.sql:ro
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-plocal-root-only"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+volumes:
+  commerceops_mysql:

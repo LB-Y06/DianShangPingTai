@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+  <title id="title">CommerceOps ecommerce data operations</title>
+  <desc id="desc">A dark analytics dashboard banner with a commerce data graph and growth chart.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a22"/>
+      <stop offset=".55" stop-color="#0b2f35"/>
+      <stop offset="1" stop-color="#123f39"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5eead4"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="#d7fff8" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="320" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="24" fill="url(#grid)"/>
+  <circle cx="1035" cy="64" r="140" fill="#5eead4" fill-opacity=".06"/>
+  <circle cx="1100" cy="260" r="180" fill="#fbbf24" fill-opacity=".045"/>
+
+  <g transform="translate(72 66)">
+    <rect width="42" height="42" rx="12" fill="#5eead4"/>
+    <path d="M11 26l7-8 6 5 8-12" fill="none" stroke="#062b2a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="62" y="15" fill="#a7f3d0" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="14" letter-spacing="3">DATA OPERATIONS WORKSPACE</text>
+    <text x="0" y="93" fill="#f8fafc" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="54" font-weight="700" letter-spacing="-1">CommerceOps</text>
+    <text x="0" y="137" fill="#d1fae5" font-family="'Segoe UI', 'Microsoft YaHei', sans-serif" font-size="24">电商交易、履约与运营数据的一体化工作台</text>
+    <g transform="translate(0 172)" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="13" fill="#cbd5e1">
+      <rect x="0" y="-18" width="159" height="30" rx="15" fill="#0f766e" fill-opacity=".33" stroke="#5eead4" stroke-opacity=".38"/>
+      <text x="16" y="2">STREAMLIT</text>
+      <rect x="171" y="-18" width="102" height="30" rx="15" fill="#0f766e" fill-opacity=".33" stroke="#5eead4" stroke-opacity=".38"/>
+      <text x="187" y="2">MYSQL 8</text>
+      <rect x="285" y="-18" width="122" height="30" rx="15" fill="#0f766e" fill-opacity=".33" stroke="#5eead4" stroke-opacity=".38"/>
+      <text x="301" y="2">PLOTLY</text>
+    </g>
+  </g>
+
+  <g transform="translate(706 42)">
+    <rect width="426" height="236" rx="20" fill="#041316" fill-opacity=".7" stroke="#bffcf0" stroke-opacity=".13"/>
+    <text x="26" y="38" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="12" letter-spacing="1.5">ORDER PERFORMANCE</text>
+    <text x="26" y="82" fill="#f8fafc" font-family="'Segoe UI', sans-serif" font-size="34" font-weight="650">+ 24.8%</text>
+    <text x="178" y="82" fill="#5eead4" font-family="'Segoe UI', sans-serif" font-size="14">growth</text>
+    <g stroke="#9cefe1" stroke-opacity=".12">
+      <path d="M26 112H400"/>
+      <path d="M26 150H400"/>
+      <path d="M26 188H400"/>
+    </g>
+    <path d="M28 195 C70 187 88 159 126 166 S185 190 220 145 S282 122 320 108 S370 81 398 70" fill="none" stroke="url(#accent)" stroke-width="5" stroke-linecap="round" filter="url(#glow)"/>
+    <g fill="#071a22" stroke="#5eead4" stroke-width="3">
+      <circle cx="28" cy="195" r="5"/>
+      <circle cx="126" cy="166" r="5"/>
+      <circle cx="220" cy="145" r="5"/>
+      <circle cx="320" cy="108" r="5"/>
+      <circle cx="398" cy="70" r="5"/>
+    </g>
+    <g transform="translate(26 210)" fill="#5eead4" fill-opacity=".75">
+      <rect width="42" height="7" rx="3.5"/>
+      <rect x="50" width="72" height="7" rx="3.5"/>
+      <rect x="130" width="48" height="7" rx="3.5"/>
+      <rect x="186" width="102" height="7" rx="3.5"/>
+    </g>
+  </g>
+</svg>
